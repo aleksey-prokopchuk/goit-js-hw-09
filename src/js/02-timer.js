@@ -36,7 +36,7 @@ function startTimer() {
 
 function stopTimer() {
   // Без + 1000 перескакує на -1, не можу зрозуміти де налажав
-  if (Date.parse(selectCalendar.value) <= Date.now()) {
+  if (Date.parse(selectCalendar.value) <= Date.now() + 1000) {
     console.log('StopTimer');
     console.log(Date.parse(selectCalendar.value));
     console.log(Date.now());
